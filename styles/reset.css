@@ -7,8 +7,9 @@
   font-family: 'Inter',sans-serif;
   outline: none;
 }
+
 .container{
-  width: 1232px;
+  max-width: 1232px;
   margin: 0 auto;
 }
 /* Remove default margin */

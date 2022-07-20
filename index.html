@@ -4,26 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/media.css">
+  <link href="./styles/hamburgers.min.css" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="header__block">
+        <a href="#" class="header__logo hl1"><img src="./images/PakkoFullWhite.svg" alt="logo1"></a>
         <a href="#" class="header__logo"><img src="./images/logo1.png" alt="logo1"></a>
-        <nav class="header__list">
+        <nav class="header__list" id="menu">
           <a href="">Fonctionnalités</a>
           <a href="">Tarifs</a>
           <a href="">App iOS</a>
           <a href="">Me connecter</a>
-          <a href="" class="header__link">S'inscrire</a>
+          <a href="">S'inscrire</a>
         </nav>
+        <button class="hamburger hamburger--collapse" id="hamburger" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
     </div>
   </header>
-  <section class="main">
+  <!-- <section class="main">
     <div class="container">
       <div class="main__block">
         <div class="main__content">
@@ -39,8 +47,8 @@
         <div class="main__image"><img src="./images/img1.png" alt=""></div>
       </div>
     </div>
-  </section>
-  <section class="graphics">
+  </section> -->
+  <!-- <section class="graphics">
     <div class="container">
       <div class="graphics__block">
         <div class="graphics__content">
@@ -76,8 +84,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="features">
+  </section> -->
+  <!-- <section class="features">
     <div class="container">
       <div class="features__content">
         <h2>Pensé pour les 
@@ -118,8 +126,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="price">
+  </section> -->
+  <!-- <section class="price">
     <div class="container">
       <div class="price__heading"><h2>Des tarifs qui s'adaptent</h2><h2>à votre activité !</h2></div>
       <div class="price__block">
@@ -169,14 +177,7 @@
               <div class="price__icon"><img src="./images/Group 1.png" alt=""></div>
               <div class="price__text text3"><h2>Gratuit</h2></div>
             </div>
-            <!-- <div class="price__decscription">
-              <img src="./images/tick3.png" alt="">
-              <p>30 jours d'essai gratuits</p>
-              <img src="./images/tick3.png" alt="">
-              <p>30 jours d'essai gratuits</p>
-              <img src="./images/tick3.png" alt="">
-              <p>Chiffre d'affaires illimité</p>
-            </div> -->
+          
             <div class="price__decscription d3">
               <img src="./images/tick3.png" alt="">
               <p>30 jours d'essai gratuits</p>
@@ -190,8 +191,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="chats">
+  </section> -->
+  <!-- <section class="chats">
     <div class="container">
       <div class="chats__block">
         <div class="chats__left">
@@ -368,8 +369,8 @@
           </div>
       </div>
     </div>
-  </section>
-  <section class="last">
+  </section> -->
+  <!-- <section class="last">
     <div class="container">
       <div class="last__block">
         <div class="last__content">
@@ -379,8 +380,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <footer class="footer">
+  </section> -->
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer__block">
         <div class="footer__list">
@@ -422,6 +423,16 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
+  <script>
+    let hamburger = document.getElementById('hamburger'),
+            menu = document.getElementById('menu')
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('is-active')
+            menu.classList.toggle('is-active')
+        })
+      
+  </script>
 </body>
 </html>
