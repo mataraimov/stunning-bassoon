@@ -1,13 +1,17 @@
 #hamburger{
   display: none;
 }
+.h1mb{
+  display: none;
+}
 .header{
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 30;
+  z-index: 60;
   background: #FFF;
+  border-bottom: 0.1px solid rgb(70, 69, 69);
 }
 .header:before{
   content: ' ';
@@ -16,7 +20,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #100A39;
+  background-color: #100A30;
   z-index: 2;
 }
 
@@ -26,10 +30,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 21px;
+  padding: 28px;
+  
 }
-.header__logo{
-  z-index: 5;
+.header__logo:nth-child(2){
+  display: none;
 }
 .header__list{
   z-index: 3;
@@ -40,6 +45,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background: rgba(255, 255, 255, 0.9);
 }
 .header__list.header__list.is-active a{
   margin: 0;
@@ -80,20 +91,21 @@
 .h1{
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 400;
-  font-size: 55px;
-  line-height: 64px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 54px;
   /* or 116% */
   text-align: center;
   letter-spacing: 0.56px;
-
+  margin-bottom: 24px;
   color: #FFFFFF;
+
 }
 .main__text p{
-  margin-top: 26px;
+  
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  /* line-height: 30px; */
   /* identical to box height, or 188% */
 
   text-align: center;
@@ -102,7 +114,8 @@
   color: rgba(255, 255, 255, 0.7);
 }
 .main__content{
-  margin: 62px 320px 0px;
+  margin: 152px auto 0px;
+  width: 650px;
 }
 .main__link{
   margin-top: 48px;
@@ -123,6 +136,7 @@
   border: 1px solid #C3C1CB;
   border-radius: 8px;
   background:transparent;
+  margin-right: 0;
 }
 .graphics__block{
   padding: 243px 57px 0px;
@@ -528,3 +542,8 @@ color: #4C4764;
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   background-color: #fff;
 }
+
+.hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #fff; }
