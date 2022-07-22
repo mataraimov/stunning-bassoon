@@ -228,9 +228,9 @@
   color: #100A30;
   padding-bottom: 26px;
 }
-.h2{
+/* .h2{
   padding-top: 18px;
-}
+} */
 .features__block{
   margin-top: 32px;
   display: grid;
@@ -452,6 +452,7 @@ color: #100A30;
   padding: 116px 0px 76px;
 }
 .last__content{
+  border-radius: 4px;
   background:url('../images/Frame\ \(4\).png');
   text-align: center;
   height: 380px;
