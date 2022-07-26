@@ -8,16 +8,31 @@
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/media.css">
   <link href="./styles/hamburgers.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
-  <header class="header">
+  <header  class="header">
     <div class="container">
       <div class="header__block">
         <a href="#" class="header__logo hl1"><img src="./images/PakkoFullWhite.svg" alt="logo1"></a>
         <a href="#" class="header__logo"><img src="./images/logo1.png" alt="logo1"></a>
         <nav class="header__list" id="menu">
-          <a href="">Fonctionnalités</a>
+          <div class="select">
+            <a href="">Fonctionnalités<img src="./images/Frame.png" alt=""></a>
+            <div class="select__hover">
+              <div class="select__item">
+              <img src="./images/select__icon1.png" alt=""><p>Suivi et analyse de l'activité</p>
+              </div>
+              <div class="select__item">
+              <img src="./images/select__icon2.png" alt=""><p>Devis et facturation</p>
+              </div>
+              <div class="select__item">
+              <img src="./images/select__item3.png" alt=""><p>Gestion des projets et clients</p>
+              </div>
+              
+            </div>
+          </div>
           <a href="">Tarifs</a>
           <a href="">App iOS</a>
           <a href="">Me connecter</a>
@@ -45,13 +60,16 @@
             </div>
           </div>
         </div>
-        <div class="main__image"><img src="./images/img1.png" alt=""></div>
+        <div data-aos="fade-up"
+        data-aos-duration="3000" class="main__image"><img src="./images/img1.png" alt=""></div>
       </div>
     </div>
   </section>
   <section class="graphics">
     <div class="container">
-      <div class="graphics__block">
+      <div data-aos="fade-right"
+      data-aos-offset="500"
+      data-aos-easing="ease-in-sine" class="graphics__block">
         <div class="graphics__content">
           <p>Suivi et analyse</p>
           <h2>Chiffre d'affaires, cotisations, plafonds...</h2>
@@ -62,7 +80,9 @@
           <img src="./images/img2.png" alt="">
         </div>
       </div>
-      <div class="graphics__block second__block">
+      <div data-aos="fade-left"
+      data-aos-offset="500"
+      data-aos-easing="ease-in-sine" class="graphics__block second__block">
         <div class="graphics__image">
           <img src="./images/img3.png" alt="">
         </div>
@@ -73,7 +93,9 @@
           <a href="">En savoir plus</a>
         </div>
       </div>
-      <div class="graphics__block third__block">
+      <div data-aos="fade-right"
+      data-aos-offset="500"
+      data-aos-easing="ease-in-sine" class="graphics__block third__block">
         <div class="graphics__content third">
           <p>Suivi et analyse</p>
           <h2>Chiffre d'affaires, cotisations, plafonds...</h2>
@@ -88,40 +110,41 @@
   </section>
   <section class="features">
     <div class="container">
-      <div class="features__content">
+      <div data-aos="fade-up"
+      data-aos-duration="300" class="features__content">
         <h2>Pensé pour les 
         </h2><h2 class="h2">micro-entrepreneurs</h2>
       </div>
       <div class="features__block">
-        <div class="features__items">
+        <div data-aos="zoom-in" class="features__items">
           <div class="features__image"><img src="./images/img5.png" alt=""></div>
           <div class="features__text"><p>Gestion de l'ACRE</p></div>
         </div>
-        <div class="features__items">
+        <div data-aos="zoom-in" class="features__items">
           <div class="features__image"><img src="./images/img6.png" alt=""></div>
           <div class="features__text"><p>Gestion de la TVA</p></div>
         </div>
-        <div class="features__items">
+        <div data-aos="zoom-in" class="features__items">
           <div class="features__image"><img src="./images/img11.png" alt=""></div>
           <div class="features__text"><p>Calcul des cotisations</p></div>
         </div>
-        <div class="features__items">
+        <div data-aos="zoom-in" class="features__items">
           <div class="features__image"><img src="./images/img8.png" alt=""></div>
           <div class="features__text"><p>Prélèvement libératoire</p></div>
         </div>
-        <div class="features__items">
+        <div data-aos="zoom-in" class="features__items">
           <div class="features__image"><img src="./images/img7.png" alt=""></div>
           <div class="features__text"><p>Factures externes</p></div>
         </div>
-        <div class="features__items">
+        <div data-aos="zoom-in" class="features__items">
           <div class="features__image"><img src="./images/img9.png" alt=""></div>
           <div class="features__text"><p>Plafonds CA & TVA</p></div>
         </div>
-        <div class="features__items">
+        <div data-aos="zoom-in" class="features__items">
           <div class="features__image"><img src="./images/img12.png" alt=""></div>
           <div class="features__text"><p>Import de données</p></div>
         </div>
-        <div class="features__items">
+        <div data-aos="zoom-in" class="features__items">
           <div class="features__image"><img src="./images/img10.png" alt=""></div>
           <div class="features__text"><p>Et plus à venir ...</p></div>
         </div>
@@ -130,12 +153,14 @@
   </section> 
   <section class="price">
     <div class="container">
-      <div class="price__heading"><h2>Des tarifs qui s'adaptent</h2><h2>à votre activité !</h2></div>
+      <div data-aos="fade-up"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" class="price__heading"><h2>Des tarifs qui s'adaptent</h2><h2>à votre activité !</h2></div>
       <div class="price__block">
         <div class="price__button"><a href="">Mensuel</a><a href="">Annuel -16,5% 🎉</a></div>
       </div>
       <div class="price__block2">
-        <div class="price__item">
+        <div data-aos="zoom-in-left" class="price__item">
           <div class="price__card">
             <div class="price__image">
               <img src="./images/Frame1.png" alt="">
@@ -153,7 +178,7 @@
   
           </div>
         </div>
-        <div class="price__item">
+        <div data-aos="zoom-in-up" class="price__item">
           <div class="price__card">
             <div class="price__image">
               <img src="./images/Frame2.png" alt="">
@@ -171,7 +196,7 @@
   
           </div>
         </div>
-        <div class="price__item">
+        <div data-aos="zoom-in-right"class="price__item">
           <div class="price__card">
             <div class="price__image">
               <img src="./images/Frame3.png" alt="">
@@ -196,8 +221,12 @@
   <section class="chats">
     <div class="container">
       <div class="chats__block">
-        <div class="chats__left">
-          <div class="chats__heading">
+        <div data-aos="fade-right"
+        data-aos-offset="500"
+        data-aos-easing="ease-in-sine"class="chats__left">
+          <div data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine" class="chats__heading">
             <h2>Ils en parlent</h2>
             <h2>mieux que nous</h2>
           </div>
@@ -275,7 +304,9 @@
           </div>
         
         
-        <div class="chats__right">
+        <div data-aos="fade-left"
+        data-aos-offset="500"
+        data-aos-easing="ease-in-sine"class="chats__right">
           <div class="chats__comment chatsbg4">
             <div class="chats__profile">
               <div class="chats__avatar">
@@ -372,7 +403,7 @@
     </div>
   </section>
   <section class="last">
-    <div class="container">
+    <div data-aos="zoom-in-up"class="container">
       <div class="last__block">
         <div class="last__content">
           <p>Prêt à gagner du temps ?</p>
@@ -434,6 +465,10 @@
             menu.classList.toggle('is-active')
         })
       
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 </body>
 </html>

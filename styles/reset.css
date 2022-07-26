@@ -7,7 +7,9 @@
   font-family: 'Inter',sans-serif;
   outline: none;
 }
-
+html,body{
+  overflow-x: hidden;
+}
 .container{
   max-width: 1232px;
   margin: 0 auto;
@@ -86,4 +88,3 @@ button{
   padding: 0;
   background: transparent;
 }
-

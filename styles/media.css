@@ -11,7 +11,9 @@
     padding: 10px;
 
   }
-  
+  .header__block{
+    width: 100%;
+  }
 
   .features__items{
     padding: 24px 24px 0px;
@@ -37,6 +39,7 @@
   }
   .main{
     height: 1000px;
+    
   }
 }
 
@@ -286,6 +289,9 @@
     row-gap: 20;
     column-gap: 20px;
     padding: 0px 30px;
+  }
+  .logos img:last-of-type{
+    padding: 10px;
   }
   .features__image img{
     scale: 0.9;
